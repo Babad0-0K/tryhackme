@@ -1,0 +1,45 @@
+# Nmap 7.93 scan initiated Sat Dec 17 07:29:07 2022 as: nmap -sC -sV -oN nmap/initial 10.10.52.194
+Nmap scan report for 10.10.52.194
+Host is up (0.035s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 992331bbb1e943b756944cb9e82146c5 (RSA)
+|   256 57c07502712d193183dbe4fe679668cf (ECDSA)
+|_  256 46fa4efc10a54f5757d06d54f6c34dfe (ED25519)
+80/tcp  open  http        Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Skynet
+110/tcp open  pop3        Dovecot pop3d
+|_pop3-capabilities: UIDL AUTH-RESP-CODE PIPELINING SASL CAPA TOP RESP-CODES
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp open  imap        Dovecot imapd
+|_imap-capabilities: ENABLE LOGIN-REFERRALS SASL-IR LOGINDISABLEDA0001 more ID have IDLE post-login listed capabilities Pre-login IMAP4rev1 OK LITERAL+
+445/tcp open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: SKYNET; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 10h48m28s, deviation: 3h27m50s, median: 8h48m28s
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_nbstat: NetBIOS name: SKYNET, NetBIOS user: <unknown>, NetBIOS MAC: 000000000000 (Xerox)
+| smb2-time: 
+|   date: 2022-12-17T15:17:49
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: skynet
+|   NetBIOS computer name: SKYNET\x00
+|   Domain name: \x00
+|   FQDN: skynet
+|_  System time: 2022-12-17T09:17:49-06:00
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 17 07:29:22 2022 -- 1 IP address (1 host up) scanned in 14.63 seconds
